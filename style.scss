@@ -1,0 +1,84 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+* {
+  box-sizing: border-box;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 3rem auto;
+  border: 1px solid #313233;
+  padding: 20px;
+  .intro {
+    display: flex;
+    justify-content: space-around;
+    .avatar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30%;
+      padding: 20px;
+      img {
+        width: 100%;
+        border-radius: 20px;
+      }
+    }
+    .info {
+      width: 60%;
+      font-size: 1.2rem;
+      .d-inb {
+        display: inline-block;
+      }
+      .title {
+        color: steelblue;
+        font-weight: 600;
+        margin-right: 2rem;
+      }
+      .content {
+        color: #313233;
+      }
+    }
+  }
+  .mid {
+    width: 60%;
+    border: 1px solid steelblue;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    color: #313233;
+  }
+  .exp {
+    padding: 20px;
+    h2 {
+      display: inline-block;
+      position: relative;
+      &:before {
+        content: '';
+        background-color: steelblue;
+        position: absolute;
+        right: -5px;
+        bottom: -2px;
+        padding: 10px 30px;
+        z-index: -5;
+        opacity: .6;
+      }
+    }
+    .row {
+      display: flex;
+      justify-content: space-between;
+      .col {
+        width: 30%;
+        h3 {
+          font-weight: 600;
+          color: steelblue;
+          padding: 0 10px;
+          margin-bottom: 0;
+        }
+        .text {
+          line-height: 30px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
